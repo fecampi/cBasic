@@ -4,6 +4,7 @@
 //usar acentos
 #include <locale.h>
 
+//Função principal do programa
 int main()
 {
     //Definiram como padrão que a main tem que retornar um numero inteiro.
