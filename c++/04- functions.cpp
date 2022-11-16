@@ -3,12 +3,7 @@
 
 using namespace std;
 
-void returnVoid()
-{
-    printf("-0---0-\n");
-    printf("---|---\n");
-    printf("--___--\n");
-}
+
 
 int returnInt()
 {
