@@ -9,13 +9,13 @@ int main () {
     //Cria o objeto do arquivo
     ofstream file;
  
-    //Abre o arquivo
+    //Abre 
     file.open("text.txt");
  
-    //Esvazia o arquivo
+    //Limpa
     file << "";
  
-    //Fecha o arquivo
+    //Fecha
     file.close();
  
     return 0;
