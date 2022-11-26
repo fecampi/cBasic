@@ -3,7 +3,10 @@
 
 using namespace std;
 
-
+void returnVoid()
+{
+    printf("return void \n");
+}
 
 int returnInt()
 {
@@ -49,50 +52,59 @@ void modifyVector(int *vector, int size)
         vector[cont] = vector[cont] + 1;
 }
 
-//caso fique abaixo do main é preciso colocar aqui.
+bool byAddress(int *number)
+{
+    *number = *number + 1;
+}
+
+// caso fique abaixo do main é preciso colocar aqui.
 float returnFloat();
 
 int main()
 {
-    //função sem retorno
+    // função sem retorno
     returnVoid();
 
-    //função retornando um numero inteiro
+    // função retornando um numero inteiro
     int a = returnInt();
     printf("\n%d", a);
 
-    //função retornando numeros quebrados
+    // função retornando numeros quebrados
     float b = returnFloat();
     printf("\n%.2f", b);
 
-    //função retornando char
+    // função retornando char
     char c = returnChar();
     printf("\n %c", c);
 
-    //função retornando boll
+    // função retornando boll
     char d = returnBool();
     printf("\n %d", d);
 
-    //função com parametro
+    // função com parametro
     int successor = returnSuccessor(2);
     printf("\n %d", successor);
 
-    //função com parametro
+    // função com parametro
     int sum = returnSum(2, 6);
     printf("\n %d", sum);
 
-    //função com Ponteiro
+    // função com Ponteiro
     increasePointer(&a);
     printf("\n%d", a);
 
-    //função com Vetor e ponteiro
+    // função com Vetor e ponteiro
     int vector[4] = {1, 2, 3, 4};
     printVector(vector, 4);
 
-    //função com Vetor e modificação no ponteiro
+    // função com Vetor e modificação no ponteiro
     modifyVector(vector, 4);
     printVector(vector, 4);
-    return 0;
+
+    // função passando o endereço de memoria
+    int number = 10;
+    byAddress(&number);
+    printf("\n byAddress:%d", number);
 }
 
 float returnFloat()

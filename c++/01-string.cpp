@@ -3,7 +3,7 @@
 #include <string>
 #include <iostream>
 
-using namespace std;
+
 
 //Função principal do programa
 int main()
@@ -11,15 +11,15 @@ int main()
 
     //Definindo uma String
     //std::string palavra
-    string palavra;
+    std::string palavra;
 
     //Imprimindo na tela
-    cout << "Digite uma palavra: ";
+    std::cout << "Digite uma palavra: ";
 
     //Lendo uma string
-    cin >> palavra;
+    std::cin >> palavra;
 
     //Imprimindo uma variável
-    cout << "\nA palavra é " << palavra << "!";
+    std::cout << "\nA palavra é " << palavra << "!";
     return 0;
 }

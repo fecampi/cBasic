@@ -3,6 +3,7 @@
 #include <string>
 #include <iostream>
 
+//Não precisar usar std::cout
 using namespace std;
 
 int main()
